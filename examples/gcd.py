@@ -1,7 +1,7 @@
 import sys
 
 sys.path.append('../')
-from recursion_tree_plotter import plot_recursion_tree
+from recursion_tree_plotter.recursion_tree_plotter import plot_recursion_tree
 
 
 @plot_recursion_tree

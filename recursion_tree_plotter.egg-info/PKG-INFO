@@ -1,0 +1,61 @@
+Metadata-Version: 2.1
+Name: recursion-tree-plotter
+Version: 1.0.1
+Summary: A Python package to plot the graph for calls to a recursive function
+Home-page: https://github.com/nikhilkumarsingh/recursion-tree-plotter
+Author: Nikhil Kumar Singh
+Author-email: nikhilksingh97@gmail.com
+License: MIT
+Description: # Recursion Tree Plotter
+        
+        A python decorator to generate a visual tree for recursive functions.
+        
+        
+        ## Installation
+        
+        ```bash
+        $ pip install recurstion-tree-plotter
+        ```
+        
+        
+        ## Example
+        
+        Let's say you have a recursive function for finding n-th element in Fibonacci sequence.
+        
+        ```python
+        def fib(n):
+            if n <= 1:
+                return n
+            return fib(n - 1) + fib(n - 2)
+        ```
+        
+        In order to plot a recursion tree for an execution of above function (`say fib(5)`), we put `@plot_recursion_tree`
+        decorator over it.
+        
+        
+        ```python
+        from recursion_tree_plotter import plot_recursion_tree
+        
+        
+        @plot_recursion_tree
+        def fib(n):
+            if n <= 1:
+                return n
+            return fib(n - 1) + fib(n - 2)
+        ```
+        
+        And boom!
+        
+        ![](https://github.com/nikhilkumarsingh/recursion-tree-plotter/raw/master/examples/plots/fib_1607174531.png)
+        
+        
+        In the tree, node label is constructed as `<comma-separated args> [<counter>]` where `counter` specifies the order
+        of execution.
+        
+        **Check out `examples` folder for more examples!**
+Platform: UNKNOWN
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Description-Content-Type: text/markdown

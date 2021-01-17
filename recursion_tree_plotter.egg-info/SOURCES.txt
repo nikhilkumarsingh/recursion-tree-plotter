@@ -1,0 +1,11 @@
+LICENSE
+MANIFEST.in
+README.md
+setup.py
+recursion_tree_plotter/__init__.py
+recursion_tree_plotter/main.py
+recursion_tree_plotter.egg-info/PKG-INFO
+recursion_tree_plotter.egg-info/SOURCES.txt
+recursion_tree_plotter.egg-info/dependency_links.txt
+recursion_tree_plotter.egg-info/requires.txt
+recursion_tree_plotter.egg-info/top_level.txt
